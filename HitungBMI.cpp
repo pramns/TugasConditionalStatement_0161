@@ -8,3 +8,6 @@ void inputdata(float b,float t){
   cin >> t;
 }
 
+float hitungBMI (float a, float b){
+  return a/(b*b);
+}
