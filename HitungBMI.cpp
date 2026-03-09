@@ -1,15 +1,15 @@
 #include <iostream>
 using namespace std;
 
-void inputdata(float b,float t){
-  cout << "Masukan Berat badan anda = ";
+void inputdata(float &b,float &t){
+  cout << "Masukan Berat badan anda (kg) = ";
   cin >> b;
-  cout << "Masukan Tinggi badan anda = ";
+  cout << "Masukan Tinggi badan anda (m) = ";
   cin >> t;
 }
 
-float hitungBMI (float a, float b){
-  return a/(b*b);
+float hitungBMI (float x, float y){
+  return x/(y*y);
 }
 
 string kondisiBMI(float bmi){
