@@ -2,10 +2,13 @@
 using namespace std;
 
 void inputdata(float &b,float &t){
+  cout << "/nSelamat Datang Di Perhitungan BMI"<<endl;
+  cout << "=================================="<<endl;
   cout << "Masukan Berat badan anda (kg) = ";
   cin >> b;
   cout << "Masukan Tinggi badan anda (m) = ";
   cin >> t;
+  cout << "=================================="<< endl;
 }
 
 float hitungBMI (float x, float y){
@@ -30,6 +33,8 @@ int main(){
   inputdata(b,t);
   bmi = hitungBMI(b,t);
 
+  cout << "============Hasil nya============="<< endl;
   cout << "\nNilai BMI Anda: " << bmi << endl;
   cout << "Kondisi Berat Badan: " << kondisiBMI(bmi) << endl;
+  cout << "=================================="<< endl;
 }
